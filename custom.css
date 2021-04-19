@@ -1,7 +1,7 @@
 #mapid { height: 750px; width: 80%;margin-left: auto;
   margin-right: auto;}
 
-body {background: url(/Testing2/images/StolenOne.jpg) repeat; margin: 0;}
+body {background: url(/battery/images/StolenOne.jpg) repeat; margin: 0;}
 	
 .cuscont {width: 80%;display: block;  margin-left: auto;
   margin-right: auto;}
@@ -23,7 +23,7 @@ p{
 .row>.cusleft{
 	--bs-gutter-x: 0;
 	position:fixed;
-	background-image: url("/Testing2/images/StolenTwo.jpg");
+	background-image: url("/battery/images/StolenTwo.jpg");
 	width:15%;
 	height:100%;
 	background-repeat: repeat-x;
