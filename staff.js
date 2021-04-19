@@ -54,7 +54,7 @@ function saveJ()
 function onEachFeature(feature, layer) {
 
 		var ccc = document.createElement('form');
-		$.ajax({url: "/Testing2/Pages/elements/LPopElement.html", success: function(result){
+		$.ajax({url: "/battery/Pages/elements/LPopElement.html", success: function(result){
 			$(ccc).html(result);
 			$(".nfield",ccc).val(feature.properties.Name);
 			$(".afield",ccc).val(feature.properties.Adress);
@@ -78,7 +78,7 @@ function onEachFeature(feature, layer) {
 function onEachFeatureView(feature, layer) {
 
 		var ccc = document.createElement('form');
-		$.ajax({url: "/Testing2/Pages/elements/LPopElementView.html", success: function(result){
+		$.ajax({url: "/battery/Pages/elements/LPopElementView.html", success: function(result){
 			$(ccc).html(result);
 			$(".nfield",ccc).html(feature.properties.Name);
 			$(".afield",ccc).html(feature.properties.Adress);
@@ -114,7 +114,7 @@ L.Control.Watermark = L.Control.extend({
     onAdd: function(mymap) {
         var img = L.DomUtil.create('form');
 		$.ajax({
-		url:"/Testing2/Pages/elements/MapControl.html",
+		url:"/battery/Pages/elements/MapControl.html",
 		success: function(result){
 			$(img).html(result);
 			$(img).css({"backgroundColor":'#FFF',"padding":"5px","border":"groove gray"});
