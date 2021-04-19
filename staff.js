@@ -38,7 +38,7 @@ mymap.on('click',function(e){
 
 function download(filename, text) {
   var element = document.createElement('a');
-  element.setAttribute('href', 'data:text/plain;base64,' +encodeURIComponent('var batdumps='+text));
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent('var batdumps='+text));
   element.setAttribute('download',filename+'.json');
   element.style.display = 'none';
   document.body.appendChild(element);
