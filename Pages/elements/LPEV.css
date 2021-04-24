@@ -1,0 +1,11 @@
+td {
+	vertical-align:top;	padding-bottom:10px;
+}
+tr {
+	
+}
+.nfield,.afield{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
