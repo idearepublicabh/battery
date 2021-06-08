@@ -116,6 +116,8 @@ L.Control.Watermark = L.Control.extend({
 		$.ajax({
 		url:"/battery/Pages/elements/MapControl.html",
 		success: function(result){
+			$(img).css("display","none");
+			$(img).attr("id","MODECONTROL");
 			$(img).html(result);
 			$(img).css({"backgroundColor":'#FFF',"padding":"5px","border":"groove gray"});
 			$('input[type=radio][name=mapmode]',img).change(function(){
@@ -139,12 +141,13 @@ L.Control.Watermark = L.Control.extend({
     }
 });
 
-
 L.Control.Jajabutton = L.Control.extend({
 
     onAdd: function(mymap) {
         var img = L.DomUtil.create('button');
 		$(img).html("GeoJS");
+		$(img).css("display","none");
+		$(img).attr("id","GEOJSB");
 		L.DomEvent.disableClickPropagation(img);
 		L.DomEvent.on(img,'click',saveJ);
         return img;
@@ -153,8 +156,6 @@ L.Control.Jajabutton = L.Control.extend({
         // Nothing to do here
     },
 });
-
-
 
 
 setJaja = function(options)
@@ -169,4 +170,8 @@ L.control.watermark = function(opts) {
 L.control.watermark({position: 'topright' }).addTo(mymap);
 var Jajabutton = setJaja({position: 'bottomleft'}).addTo(mymap);
 
+function showHidden(){
+	$("#GEOJSB").css("display","block");
+	$("#MODECONTROL").css("display","block");
+}
  
