@@ -318,6 +318,8 @@ font-size: 16px;
 	}
 	.row .clink h4
 	{
+	 font-size: 4vw;
+	 font-weight: bold;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
