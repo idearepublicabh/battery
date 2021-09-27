@@ -181,7 +181,6 @@ font-size: 16px;
 }
 
 .row .pageTitle h1 {
-    font-size: 26px;
     font-family: Museosanc;
     margin: 0 0 0 15px;
 }
@@ -285,6 +284,14 @@ font-size: 16px;
 }
 
 @media screen and (max-width: 800px) {
+	
+	
+	
+	.pageTitle h1{
+		font-size:1rem;
+	}
+	
+	
 	#mapid { height: 325px; width: 100%;margin-left: auto;
 	margin-right: auto;}
 	.clbar ul a li{
